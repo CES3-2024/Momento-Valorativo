@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- Configuración del servlet TaskServlet -->
+    <servlet>
+        <servlet-name>TaskServlet</servlet-name>
+        <servlet-class>co.edu.poli.ces3.momentovalorativo.servlets.TaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TaskServlet</servlet-name>
+        <url-pattern>/tasks</url-pattern>
+    </servlet-mapping>
+
+    <!-- Mapeo adicional para la ruta /tasks-project -->
+    <servlet-mapping>
+        <servlet-name>TaskServlet</servlet-name>
+        <url-pattern>/tasks-project</url-pattern>
+    </servlet-mapping>
+
+    <!-- Mapeo adicional para la ruta /quantity-tasks-project -->
+    <servlet-mapping>
+        <servlet-name>TaskServlet</servlet-name>
+        <url-pattern>/quantity-tasks-project</url-pattern>
+    </servlet-mapping>
+
+</web-app>
